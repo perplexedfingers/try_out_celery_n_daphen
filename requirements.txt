@@ -1,0 +1,3 @@
+celery==4.4.7
+daphne==2.5.0
+Django==3.1
