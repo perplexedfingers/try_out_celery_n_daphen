@@ -5,7 +5,7 @@ from celery import Celery
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'try_out.settings')
 
-app = Celery('try_out')
+app = Celery('try_out', broker='redis://localhost')
 
 app.config_from_object('django.conf:settings', namespace='CELERY')
 
