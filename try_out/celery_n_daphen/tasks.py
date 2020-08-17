@@ -1,6 +1,6 @@
 import time
 
-from ..try_out import celery_app
+from try_out import celery_app
 
 
 def yo(self, retval, task_id, args, kwargs):
